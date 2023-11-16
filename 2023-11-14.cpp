@@ -20,15 +20,19 @@ int main() {
 
    string mot;
 
-   stringstream sstr("UN DEUX TROIS QUATRE");
-   sstr.ignore(numeric_limits<streamsize>::max());
+   stringstream sstr;
+//   sstr.ignore(numeric_limits<streamsize>::max());
 
-   sstr << "CINQ SIX SEPT";
+   sstr.str("UN DEUX TROIS QUATRE");
+   cout << sstr.str() << endl;
 
    cout << "1ere fois" << endl;
    while(getline(sstr, mot, ' '))
       cout << "|" << mot << "|" << endl;
    cout << endl;
+
+   sstr.str("CINQ SIX SEPT");
+   cout << sstr.str() << endl;
 
    cout << "2eme fois" << endl;
    while(getline(sstr, mot, ' '))
