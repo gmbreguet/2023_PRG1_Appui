@@ -1,6 +1,7 @@
 #include <iostream>
 #include <fstream>
 #include <string>
+#include <numeric>
 
 using namespace std;
 
@@ -13,7 +14,7 @@ int main() {
 
    const int* ptrInt = &tab[1]; // &i;
    ptrInt = &tab[2];
-   *ptrInt = 12;
+//   *ptrInt = 12;
 //   ptrInt            = &k;
 //   double* ptrDouble = &i;
 
