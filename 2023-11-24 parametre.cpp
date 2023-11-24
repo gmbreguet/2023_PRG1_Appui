@@ -32,7 +32,7 @@ void initialEnMajuscule(string& s) {
 //   for (size_t i=0; i<s.size(); ++i)
    for (char& c : s)
       c = toupper(c);
- 
+
 int main() {
 
    int i = 2;
